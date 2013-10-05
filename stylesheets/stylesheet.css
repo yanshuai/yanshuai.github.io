@@ -61,6 +61,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+span {
+  margin-right: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
@@ -90,6 +94,7 @@ h4 {
 
 h5 {
   font-size: 18px;
+  font-style: italic;
 }
 
 h6 {
@@ -165,9 +170,6 @@ pre, code {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-
-
-
 }
 
 pre {
@@ -234,19 +236,19 @@ table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
- }
+}
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   background: #373737;
   color: #fff;
- }
+}
 
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+}
 
 form {
   background: #f2f2f2;
@@ -274,6 +276,21 @@ Full-Width Styles
 }
 
 #forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#weibo_banner {
   display: block;
   position: absolute;
   top:0;
@@ -370,8 +387,6 @@ Full-Width Styles
   background: #212121;
 }
 
-
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -423,5 +438,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
