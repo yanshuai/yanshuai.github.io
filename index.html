@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Yanshuai.github.io : yanshuai's blog" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>闫帅的主页</title>
+    <title>闫帅</title>
   </head>
 
   <body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
       <header class="inner">
-        <a id="forkme_banner" href="https://github.com/yanshuai">View on GitHub</a>
-        <h1 id="project_title">闫帅的主页</h1>
+        <a id="forkme_banner" href="https://github.com/yanshuai">GitHub</a>
+        <!--
+        <a id="weibo_banner" href="https://github.com/yanshuai">Weibo</a>
+        -->
+        <h1 id="project_title">闫帅</h1>
         <h2 id="project_tagline">Ambition makes a man man.</h2>
-      
-        <section id="downloads">
-          <a class="zip_download_link" href="https://github.com/yanshuai/yanshuai.github.io/zipball/master">Download this project as a .zip file</a>
-          <a class="tar_download_link" href="https://github.com/yanshuai/yanshuai.github.io/tarball/master">Download this project as a tar.gz file</a>
-        </section>
       </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>个人简介</h3>
-        <p>2007.08 ~ 2011.07 就读于浙江大学软件工程专业，学历本科。</p>
-        <p>2010.11 ~ 2013.07 任职于百度网讯科技有限公司平台测试部，离职时职务是高级测试工程师。</p>
+        <h5>教育经历</h5>
+        <hr />
+        <p><span>2007.08 ~ 2011.07</span>就读于浙江大学软件工程专业，学历本科。</p>
+        <h5>工作经历</h5>
+        <hr />
+        <p><span>2010.11 ~ 2013.07</span>任职于百度网讯科技有限公司平台测试部，离职时职务——高级测试工程师。</p>
+        <h5>项目经验</h5>
+        <hr />
+        <h6>分布式类研发项目</h6>
+        <p><span>2011.10 ~ 2012.03</span>学习Hadoop基本架构，从事Windows云测试系统研发，实现将用户执行的Case分发到不同的Windows机器上执行，提高Windows Case的执行效率，用于百度输入法测试及基于Selenium的Web UI测试，采用50+机器，Case执行效率提升5倍左右。</p>
+        <p><span>2013.02 ~ 2013.06</span>参考下一代计算模型，实现基于Gearman调度的分布式压力测试平台，使Linux用户可以在不关心资源的情况下，通过在Web UI上简单配置，即可实现不同压力下，系统性能指标的获取。应用于ZooKeeper压力测试，并提供5w压力下的QPS数据；为INF-DS存储业务提供压力测试，找出高压下的bug缺陷。</p>
+        <h6>Dashboard类研发项目</h6>
+        <p><span>2011.03 ~ 2011.05</span>学习持续集成及Hudson插件开发，实现将全百度20+台Hudson引擎测试结果数据收集工作，并应用到了PS部门，作为CI阶度模型的参考。</p>
+        <p><span>2012.03 ~ 2012.06</span>学习基于Pentaho的BI解决方案，采用Kettle做ETL，实现从CI-Dashboard数据库、INF-Jira数据库及SVN提取数据；采用Reporting-designer来绘制图表；采用CDF框架绘制Dashboard。实现从项目维度、人员维度分析项目数据，提高项目管理对项目进展的认识。</p>
+        <h6>分布式类测试项目</h6>
+        <p><span>2012.08 ~ 2013.01</span>测试下一代计算系统ZooKeeper子模块，整理测试用例，添加异常测试用例，并将测试工作集成到Jenkins环境中，实现一旦RD Check-in代码，即触发静态代码检查=>RD单元测试=>QA系统回归测试，并实现一键上线功能。</p>
+        <p><span>2013.04 ~ 2013.06</span>测试下一代计算系统Abaci子模块，测试统一认证功能，ZooKeeper子模块异常对Abaci的影响。</p>
+        <h6>运维支持项目</h6>
+        <p><span>2012.06～2012.08</span>运维云测Hadoop集群及50+Windows机器，并提供云测客服支持。</p>
+        <p><span>2013.04～2013.06</span>参与QA-Hadoop集群（100+规模）的运维工作，并提供Hadoop使用客服支持。</p>
+        <h5>技术能力</h5>
+        <hr />
+        <p>熟悉Linux开发环境，MySQL数据库基本操作，MapReduce基本原理及Java/Shell编程。</p>
       </section>
     </div>
 
