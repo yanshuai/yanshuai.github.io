@@ -1,0 +1,17 @@
+.avatar {
+  float: left;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px 1px #bbb
+}
+
+.avatar img {
+  display: block;
+  border: 0;
+  margin: 0;
+  border-radius: 50%;
+}
