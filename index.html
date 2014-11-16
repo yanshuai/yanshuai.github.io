@@ -52,26 +52,46 @@
           </a>
         </div>
         <div class="site-icons">
-          <a href="http://weibo.com/sartisty" target="_blank">
+          <a id="site-weibo" href="http://weibo.com/sartisty" target="_blank">
             <span class="fa fa-weibo fa-icon"></span>
           </a>
-          <a href="#" title="yanshuai_zju">
+          <a id="site-weixin" href="javascript:void(0);" title="yanshuai_zju">
             <span class="fa fa-weixin fa-icon"></span>
           </a>
-          <a href="#" title="498560584">
+          <a id="site-qq" href="javascript:void(0);" title="498560584">
             <span class="fa fa-qq fa-icon"></span>
+            <div class="popover top">
+              <div class="arrow"></div>
+              <label>QQ: 498560584</label>
+              <p><i>扫码加QQ</i></p>
+              <div id="qrcode-qq"></div>
+            </div>
           </a>
         </div>
       </div>
     </div>
 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      $(function() {
+      (function() {
         console.log('欢迎来到闫帅的个人世界！');
-      });
+        $('#qrcode-qq').qrcode({
+          text: 'http://qm.qq.com/cgi-bin/qm/qr?k=foYGvZZellc6KDsLX2Chj52naQMdLuBy',
+          width: 100,
+          height: 100
+        });
+        $('#site-qq').on('mouseenter', function() {
+          $('.popover.top').css('top', ($('#site-qq').position().top - $('.popover.top').height() - 32) + 'px');
+          $('.popover.top').css('left', ($('#site-qq').position().left - $('.popover.top').width() / 2 - 2) + 'px');
+          $('.popover.top').show();
+        });
+        $('#site-qq').on('mouseleave', function() {
+          $('.popover.top').hide();
+        });
+      })();
     </script>
   </body>
 </html>
