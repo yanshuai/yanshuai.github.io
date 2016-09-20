@@ -5,6 +5,7 @@ import model.App;
 import model.Result;
 import model.editor.AppPropertyEditor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -19,6 +20,16 @@ public class AppController {
 	
     @Autowired
     private AppBo appBo;
+
+    @Autowired
+    private ApplicationContext appContext;
+
+    public AppController() {
+        System.out.println("*** App Controller ***");
+        if (null != appContext) {
+            System.out.println(appContext.getBeanDefinitionCount());
+        }
+    }
 
     @InitBinder
     public void initBinder(WebDataBinder binder) {
