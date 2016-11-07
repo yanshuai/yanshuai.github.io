@@ -1,16 +1,9 @@
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
 body {
   padding: 0;
   margin: 0;
   background: url(./bg.png) repeat-x 0 0;
   font: 12px/1.7em ubuntu, arial, sans-serif;
+  color: #222;
 }
 
 a {
@@ -50,7 +43,6 @@ img {
   color: #999;
 }
 
-
 #content {
   margin-top: 10px;
   text-align: center;
@@ -63,6 +55,9 @@ img {
 
 .site-icons {
   margin-top: 20px;
+}
+
+.site-icons a+a {
   margin-left: 20px;
 }
 
